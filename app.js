@@ -4,7 +4,8 @@
     let noun = ['jogger', 'racoon'];
     let extension = ['.com', '.net', '.us', '.io'];
 
-    let mensaje = '';
+    let listaDominios = [];
+    let mensaje = "";
         
 
     for (let i = 0; i < pronoun.length; i++) {
@@ -12,11 +13,11 @@
             for (let k = 0; k < noun.length; k++) {
                 for (let m = 0; m < extension.length; m++) {
                     mensaje= pronoun[i] + adj[j]+ noun[k]+ extension[m];
-                    console.log(mensaje);
+                    listaDominios.push(mensaje);
                 }            
             }
         }
     }
 
-    
+    console.log(listaDominios);
   
